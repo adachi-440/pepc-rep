@@ -92,7 +92,7 @@ func main() {
 	// Step 4. Emit the batch to the relayer
 	fmt.Println("Step 4. Emit batch")
 
-	contract.SendTransaction("emitMatchBidAndHint", []interface{}{fakeRelayer.URL, matchEvent.BidId}, backRunBundleBytes)
+	contract.SendTransaction("emitMatchBidAndHint", []interface{}{"https://relay-goerli.flashbots.net", matchEvent.BidId}, backRunBundleBytes)
 }
 
 var hintEventABI abi.Event

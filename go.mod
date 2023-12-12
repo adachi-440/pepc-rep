@@ -1,6 +1,6 @@
 module github.com/flashbots/suapp-examples
 
-go 1.21.3
+go 1.23
 
 replace github.com/ethereum/go-ethereum => github.com/flashbots/suave-geth v0.0.0-20231109103245-75f702965158
 
